@@ -19,7 +19,7 @@
 // ==UserScript==
 // @name         3d Text Select
 // @namespace    https://openuserjs.org/users/toddmath
-// @version      0.1
+// @version      0.2
 // @license      MIT
 // @description  Advanced selected text shadow, making it pop out and stand out.
 // @copyright    2019, toddmath (https://toddmath.com)
@@ -71,29 +71,19 @@ $(document).ready(function () {
 
   function firefox_select_style() {
     GM_addStyle(`::-moz-selection { position: relative; top: ${cus_top} ; left: ${cus_left}; color: ${cus_text_color}; background: ${cus_background}; text-shadow: ${cus_text_shadow}; }`)
-    //GM_addStyle("input::selection { color: #536DFE; background: none repeat scroll 0% 0% transparent; }")
-    //GM_addStyle("a::selection { top: -3px; left: -3px; color: #FAFAFA; background: none repeat scroll 0% 0% transparent; text-shadow: 1px 1px 1px #000, 2px 2px 2px #5C6BC0, 3px 3px 3px #536DFE, 3px 3px 3px #7986CB, 4px 4px 7px #EA80FE, 5px 5px 9px #E1BEE7; }")
   }
 
   function chrome_select_style() {
     GM_addStyle(`::selection { position: relative; top: ${cus_top} ; left: ${cus_left}; color: ${cus_text_color}; background: ${cus_background}; text-shadow: ${cus_text_shadow}; }`)
-    //GM_addStyle("input::selection { color: #536DFE; background: none repeat scroll 0% 0% transparent; }")
-    //GM_addStyle("a::selection { top: -3px; left: -3px; color: #FAFAFA; background: none repeat scroll 0% 0% transparent; text-shadow: 1px 1px 1px #000, 2px 2px 2px #5C6BC0, 3px 3px 3px #536DFE, 3px 3px 3px #7986CB, 4px 4px 7px #EA80FE, 5px 5px 9px #E1BEE7; }")
   }
 
   function webkit_select_style() {
     GM_addStyle(`::-webkit-selection { position: relative; top: ${cus_top} ; left: ${cus_left}; color: ${cus_text_color}; background: ${cus_background}; text-shadow: ${cus_text_shadow}; }`)
-    //GM_addStyle("input::selection { color: #536DFE; background: none repeat scroll 0% 0% transparent; }")
-    //GM_addStyle("a::selection { top: -3px; left: -3px; color: #FAFAFA; background: none repeat scroll 0% 0% transparent; text-shadow: 1px 1px 1px #000, 2px 2px 2px #5C6BC0, 3px 3px 3px #536DFE, 3px 3px 3px #7986CB, 4px 4px 7px #EA80FE, 5px 5px 9px #E1BEE7; }")
   }
 
   function other_select_style() {
     GM_addStyle(`::-ms-selection { position: relative; top: ${cus_top} ; left: ${cus_left}; color: ${cus_text_color}; background: ${cus_background}; text-shadow: ${cus_text_shadow}; }`)
-    //GM_addStyle("input::selection { color: #536DFE; background: none repeat scroll 0% 0% transparent; }")
-    //GM_addStyle("a::selection { top: -3px; left: -3px; color: #FAFAFA; background: none repeat scroll 0% 0% transparent; text-shadow: 1px 1px 1px #000, 2px 2px 2px #5C6BC0, 3px 3px 3px #536DFE, 3px 3px 3px #7986CB, 4px 4px 7px #EA80FE, 5px 5px 9px #E1BEE7; }")
     GM_addStyle(`::-o-selection { position: relative; top: ${cus_top} ; left: ${cus_left}; color: ${cus_text_color}; background: ${cus_background}; text-shadow: ${cus_text_shadow}; }`)
-    //GM_addStyle("input::selection { color: #536DFE; background: none repeat scroll 0% 0% transparent; }")
-    //GM_addStyle("a::selection { top: -3px; left: -3px; color: #FAFAFA; background: none repeat scroll 0% 0% transparent; text-shadow: 1px 1px 1px #000, 2px 2px 2px #5C6BC0, 3px 3px 3px #536DFE, 3px 3px 3px #7986CB, 4px 4px 7px #EA80FE, 5px 5px 9px #E1BEE7; }")
   }
 
   universal_select_style();
