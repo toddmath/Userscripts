@@ -63,25 +63,10 @@ $(document).ready(function () {
   // Customize 3d level (selected text moving left)
   var cus_left = "-3px";
 
-  // Check if jQuery is available
-  //alert('WINNING');
-
-  var style = document.createElement("style");
-
-  function log_inject() {
-    // Check when script is injected
-    if ('loading' == document.readyState) {
-      // script injected at document-start
-      console.log("This script is running at document-start time.");
-    } else {
-      // script injected at document-end. Value = 'interactive'
-      console.log("This script is running with document.readyState: " + document.readyState);
-    }
-  };
-
   function universal_select_style() {
-    GM_addStyle(`input::selection { position: relative; color: ${cus_input_text_color}; background: ${cus_background} };`)
+    GM_addStyle(`input::selection { position: relative; color: ${cus_input_text_color} !important; background: ${cus_background} };`)
     GM_addStyle(`a::selection { position: relative; top: ${cus_top} ; left: ${cus_left}; color: ${cus_text_color}; background: ${cus_background}; text-shadow: ${cus_text_shadow}; }`)
+    GM_addStyle(`textarea::selection { position: relative; color: ${cus_input_text_color} !important; background: ${cus_background} };`)
   }
 
   function firefox_select_style() {
@@ -116,6 +101,4 @@ $(document).ready(function () {
   chrome_select_style();
   webkit_select_style();
   other_select_style();
-  log_inject();
-
 });
