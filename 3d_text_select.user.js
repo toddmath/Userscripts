@@ -37,6 +37,7 @@
 // @grant        GM_saveTab
 // @match        <all_urls>
 // @connect      *
+// @include      *
 // @run-at       document-end
 // @updateURL    https://openuserjs.org/meta/toddmath/3d_text_select.meta.js
 // @require      https://code.jquery.com/jquery-3.4.1.slim.min.js#sha256=pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8
