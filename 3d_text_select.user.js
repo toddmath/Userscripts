@@ -39,7 +39,7 @@
 // @connect      *
 // @include      *
 // @run-at       document-end
-// @updateURL    https://openuserjs.org/meta/toddmath/3d_text_select.meta.js
+// @updateURL    https://openuserjs.org/meta/toddmath/3d_Text_Select.meta.js
 // @require      https://code.jquery.com/jquery-3.4.1.slim.min.js#sha256=pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8
 // ==OpenUserJS==
 // @author       toddmath
