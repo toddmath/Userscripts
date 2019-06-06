@@ -78,7 +78,7 @@ $(document).ready(function () {
     }
   };
 
-  function universal_select_style(cus_input_text_color, cus_background, cus_top, cus_left, cus_text_color, cus_text_shadow) {
+  function universal_select_style() {
     GM_addStyle(`input::selection { position: relative; color: ${cus_input_text_color}; background: ${cus_background} };`)
     GM_addStyle(`a::selection { position: relative; top: ${cus_top} ; left: ${cus_left}; color: ${cus_text_color}; background: ${cus_background}; text-shadow: ${cus_text_shadow}; }`)
   }
