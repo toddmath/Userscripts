@@ -23,8 +23,8 @@
 // @license      MIT
 // @description  Advanced selected text shadow, making it pop out and stand out.
 // @copyright    2019, toddmath (https://toddmath.com)
-// @icon64       <img src="https://img.icons8.com/dusk/64/000000/cursor.png">
-// @icon         <img src="https://img.icons8.com/dusk/128/000000/cursor.png">
+// @icon64       https://img.icons8.com/dusk/64/000000/cursor.png
+// @icon         https://img.icons8.com/dusk/128/000000/cursor.png
 // @iconURL      https://img.icons8.com/dusk/128/000000/cursor.png
 // @icon64URL    https://img.icons8.com/dusk/64/000000/cursor.png
 // @homepageURL  https://github.com/toddmath/Userscripts
