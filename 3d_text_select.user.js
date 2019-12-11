@@ -19,7 +19,7 @@
 // ==UserScript==
 // @name         3d Text Select
 // @namespace    https://openuserjs.org/users/toddmath
-// @version      0.2
+// @version      0.3
 // @license      MIT
 // @description  Advanced selected text shadow, making it pop out and stand out.
 // @copyright    2019, toddmath (https://toddmath.com)
